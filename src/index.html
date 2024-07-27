@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cddbdd44fc.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navigation -->
+    <nav class="bg-blue-400 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="h-14 w-14">
+                <a href="#footer"><img class="rounded-full" src="C:\Users\SUBASH\OneDrive\Desktop\Java script\Landing page project\images\Logo.avif"></a>
+            </div>
+                
+            <div class="hidden md:flex space-x-4 items-center">
+                <a href="#home" class="text-black hover:text-gray-300 text-xl font-bold pt-4">Home</a>
+                <a href="#about" class="text-black hover:text-gray-300 text-xl font-bold pt-4">About</a>
+                <a href="#services" class="text-black hover:text-gray-300 text-xl font-bold pt-4">Services</a>
+                <a href="#contact" class="text-black hover:text-gray-300 text-xl font-bold pt-4">Contact</a>
+                <button class="bg-blue-800 px-6 py-2 rounded-full text-white hover:bg-blue-600 border-2 border-green-950 font-medium">Signup</button>
+            </div>          
+                
+            <div class="md:hidden flex items-center">
+                <button class="bg-blue-800 px-6 py-2 rounded-full text-white hover:bg-blue-600 border-2 border-green-950 font-medium">Signup</button>
+                <button class="text-white focus:outline-none" onclick="toggleMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden">
+            <a href="#home" class="block text-black hover:text-gray-300 font-bold px-4 py-2">Home</a>
+            <a href="#about" class="block text-black hover:text-gray-300 font-bold px-4 py-2">About</a>
+            <a href="#services" class="block text-black hover:text-gray-300 font-bold px-4 py-2">Services</a>
+            <a href="#contact" class="block text-black hover:text-gray-300 font-bold px-4 py-2">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->     
+    <div id="home" class="bg-hero-pattern bg-cover  h-screen opacity-85 flex flex-col items-center justify-center p-4">
+        <h1 class="font-bold text-5xl text-white sm:text-4xl text-center">We invest in the world's potential</h1>
+        <p class="font-medium text-2xl text-white text-center mt-4">Unleashing the power of intelligent automation and insights</p>
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-8">
+            <a href="#second"><button class="bg-blue-600 text-white font-bold rounded-md p-3 hover:bg-slate-400">Get Started</button></a>  
+            <a href="#services"><button class="bg-transparent text-white font-bold border-2 rounded-md hover:bg-slate-400 p-3">Learn More</button></a>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="second" class="container mx-auto mt-12 flex flex-col md:flex-row items-center p-4">
+        <div class="w-full md:w-1/2">
+            <img class="mx-auto w-full md:w-3/4" src="C:\Users\SUBASH\OneDrive\Desktop\Java script\Landing page project\images\undraw_favorite_pqkj.png"> 
+        </div>
+        <div class="w-full md:w-1/2 text-center leading-[2rem]">
+            <h1 class="font-bold text-5xl text-black sm:text-4xl text-center">Lets create more tools and ideas that brings us together.</h1>
+            <p class="mt-6">Amolearn helps you connect with friends and communities of people who share your interests.Connecting with your friends and family as well as discovering new ones is easy with features like groups.</p>
+            <button class="bg-blue-700 text-white px-6 py-2 rounded-full mt-6 font-medium">Get Started</button>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div id="about" class="container m-5 mx-auto ">
+        <div class="text-center">
+            <h1 class="font-bold text-2xl">Our Team</h1>
+            <p class="text-xl text-gray-500 mb-5">Explore the whole collection of open-source web components and elements built with utility classes from Tailwind</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 m-5 ">
+            <div class="container flex border-2 rounded-xl flex-col md:flex-row">
+                <div class="w-full md:w-auto p-5 md:p-0">
+                    <img class="h-auto w-full object-cover md:h-40 md:w-40 md:m-5" src="C:\Users\SUBASH\OneDrive\Desktop\Java script\Landing page project\images\portrait-smiling.avif" alt="Portrait of Lisa David">
+                </div>
+                <div class="md:text-left m-5">
+                    <h1 class="font-bold">Lisa David</h1>
+                    <p class="text-gray-600 font-semibold">CEO & Web Developer</p>
+                    <p class="text-gray-500">Lisa drives the technical strategy of the Flowbite platform and brand.</p>
+                    <div class="flex md:justify-start space-x-4 mt-2">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="container flex border-2 rounded-xl flex-col md:flex-row">
+                <div class="w-full md:w-auto p-5 md:p-0">
+                    <img class="h-auto w-full object-cover md:h-40 md:w-40 md:m-5" src="C:\Users\SUBASH\OneDrive\Desktop\Java script\Landing page project\images\smiling-young-bru.avif">
+                </div>
+                <div class="md:text-left m-5">
+                    <h1 class="font-bold">Jese Leos</h1>
+                    <p class="text-gray-600 font-semibold">CTO</p>
+                    <p class="text-gray-500">Jese drives the technology or engineering department to enhance products and services.</p>
+                    <div class="flex md:justify-start space-x-4 mt-2">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container flex border-2 rounded-xl flex-col md:flex-row">
+                <div class="w-full md:w-auto p-5 md:p-0">
+                    <img class="h-auto w-full object-cover md:h-40 md:w-40 md:m-5" src="C:\Users\SUBASH\OneDrive\Desktop\Java script\Landing page project\images\close-up-kid.avif">
+                </div>
+                <div class="md:text-left m-5">
+                    <h1 class="font-bold">Lana Byrd</h1>
+                    <p class="text-gray-600 font-semibold">Marketing & Sales</p>
+                    <p class="text-gray-500">Lana drives the marketing strategy of the fowbite platform and brand.</p>
+                    <div class="flex md:justify-start space-x-4 mt-2">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container flex border-2 rounded-xl flex-col md:flex-row">
+                <div class="w-full md:w-auto p-5 md:p-0">
+                    <img class="h-auto w-full object-cover md:h-40 md:w-40 md:m-5"  src="C:\Users\SUBASH\OneDrive\Desktop\Java script\Landing page project\images\positive-male-.avif">
+                </div>
+                <div class="md:text-left m-5">
+                    <h1 class="font-bold">Bonnie Green</h1>
+                    <p class="text-gray-600 font-semibold">Senior Front-end DeveloperMarketing & Sales</p>
+                    <p class="text-gray-500"> Bonnie drives the website by focusing on web applications user interface.</p>
+                    <div class="flex md:justify-start space-x-4 mt-2">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div id="services" class="container m-5 mx-auto">
+        <div class="text-center">
+            <h1 class="font-bold text-4xl mt-20">Designed for business teams like yours</h1>
+            <p class="text-xl text-gray-500 mt-4 mb-10">Here at codemarch we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 m-5 mb-20">
+            <div class="border-2 border-slate-200 shadow-lg rounded-xl">
+                <div class="text-center p-4">         
+                    <h1 class="font-bold text-3xl mt-3">Starter</h1>
+                    <p class="text-gray-600 font-semibold">Best option for personal use & for your next project.</p>
+                    <p class="text-black-500 text-2xl font-bold">$29<sub>/month</sub></p>
+                </div>
+               
+                <ul class="p-5">
+                    <li><i class="fa-solid fa-check text-green-600"></i> Individual configuration</li>
+                    <li><i class="fa-solid fa-check text-green-600"></i> No setup, or hidden fees</li>
+                    <li><i class="fa-solid fa-check text-green-600"></i> Team size: <span class="font-bold">1 developer</span></li>
+                    <li><i class="fa-solid fa-check text-green-600"></i> Premium support:<span class="font-bold"> 6 months</span></li>
+                    <li><i class="fa-solid fa-check text-green-600"></i> Free updates:<span class="font-bold"> 6 months</span></li>
+                    <button class="bg-blue-700 text-white px-6 py-2 rounded-full mt-6 font-medium w-full">Get Started</button>
+                </ul>
+            </div>
+
+            <div class="border-2 border-slate-200 shadow-lg rounded-xl">
+                <div class="text-center p-4">         
+                    <h1 class="font-bold text-3xl mt-3">Company</h1>
+                    <p class="text-gray-600 font-semibold">Relevent for multipe users,extended & premium suport.</p>
+                    <p class="text-black-500 text-2xl font-bold">$99<sub>/month</sub></p>
+                </div>
+               
+                <ul class="p-5">
+                    <li><i class="fa-solid fa-check text-green-600"></i> Individual configuration</li>
+                    <li><i class="fa-solid fa-check text-green-600"></i> No setup, or hidden fees</li>
+                    <li><i class="fa-solid fa-check text-green-600"></i> Team size: <span class="font-bold">10 developer</span></li>
+                    <li><i class="fa-solid fa-check text-green-600"></i> Premium support:<span class="font-bold"> 24 months</span></li>
+                    <li><i class="fa-solid fa-check text-green-600"></i> Free updates:<span class="font-bold"> 24 months</span></li>
+                    <button class="bg-blue-700 text-white px-6 py-2 rounded-full mt-6 font-medium w-full">Get Started</button>
+                </ul>
+            </div>
+
+            <div class="border-2 border-slate-200 shadow-lg rounded-xl">
+                <div class="text-center p-4">         
+                    <h1 class="font-bold text-3xl mt-3">Enterprise</h1>
+                    <p class="text-gray-600 font-semibold">Best for large scale uses and extended redistribution rights.</p>
+                    <p class="text-black-500 text-2xl font-bold">$499<sub>/month</sub></p>
+                </div>
+               
+                <ul class="p-5">
+                    <li><i class="fa-solid fa-check text-green-600"></i> Individual configuration</li>
+                    <li><i class="fa-solid fa-check text-green-600"></i> No setup, or hidden fees</li>
+                    <li><i class="fa-solid fa-check text-green-600"></i> Team size: <span class="font-bold">100 developer</span></li>
+                    <li><i class="fa-solid fa-check text-green-600"></i> Premium support:<span class="font-bold"> 36 months</span></li>
+                    <li><i class="fa-solid fa-check text-green-600"></i> Free updates:<span class="font-bold"> 36 months</span></li>
+                    <button class="bg-blue-700 text-white px-6 py-2 rounded-full mt-6 font-medium w-full">Get Started</button>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Contact section-->
+    <div id="contact" class="container mx-auto bg-white p-6 rounded-lg shadow-md lg:w-2/3">
+        <div class="flex flex-col items-center mt-4 w-full lg:max-w-2/3">
+            <h1 class="font-bold text-2xl mb-2 p-4">Contact Us</h1>
+            <p class="font-medium text-lg mb-1 text-center">Got a technical issue? Want to send feedback about a beta feature?</p>
+            <p class="font-medium text-lg mb-4 p-4 text-center">Need details about our Business plan? Let us know.</p>
+        </div>
+
+        <div class="flex flex-col items-center justify-center w-full lg:max-w-2/3">
+            <form class="flex flex-col w-full md:wd-1/2 lg:wd-1/2">
+                <div class="flex flex-col mb-4 w-full">
+                    <label for="name" class="font-bold text-base mb-1">Your name</label>
+                    <input type="text" id="name" placeholder="Enter your name" class="border-2 h-12 w-full p-2 rounded-lg" required>
+                </div>
+                <div class="flex flex-col mb-4 w-full">
+                    <label for="email" class="font-bold text-base mb-1">Your Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" class="border-2 h-12 w-full p-2 rounded-lg" required>
+                </div>
+                <div class="flex flex-col mb-4 w-full">
+                    <label for="subject" class="font-bold text-base mb-1">Subject</label>
+                    <input type="text" id="subject" placeholder="Let us know how we can help" class="border-2 h-12 w-full p-2 rounded-lg">
+                </div>
+                <div class="flex flex-col mb-4 w-full">
+                    <label for="message" class="font-bold text-base mb-1">Your message</label>
+                    <textarea id="message" placeholder="Leave a comment..." class="border-2 h-24 w-full p-2 rounded-lg"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600">Send Message</button>
+            </form>
+        </div>
+    </div>   
+    
+    <!--Links section-->
+    <div class=" grid sm:grid-cols-1 lg:grid-cols-4 gap-5 mx-10 my-10">
+
+        <div class="flex flex-col">
+            <h1 class="font-bold text-2xl text-center">About Us</h1>
+            <ul>
+                <a href="#"><li>About our company</li></a>
+                <a href="#"><li>Our Team</li></a>
+                <a href="#"><li>Mission and Values</li></a>
+                <a href="#"><li>Contact Us</li></a>
+            </ul>
+        </div>
+
+        <div class="flex flex-col">
+            <h1 class="font-bold text-2xl text-center">Resourses</h1>
+            <ul >
+                <a href="#"><li>Blog</li></a>
+                <a href="#"><li>FAQs</li></a>
+                <a href="#"><li>Documentation</li></a>
+                <a href="#"><li>Case studies</li></a>
+            </ul>
+        </div>
+
+        <div class="flex flex-col">
+            <h1 class="font-bold text-2xl text-center">Connect with us</h1>
+            <div class="block mt-5 text-center text-3xl">
+             <i class="p-1 fa-brands fa-facebook"></i>  <i class="p-1 fa-brands fa-square-instagram"></i>  <i class="p-1 fa-brands fa-linkedin"></i>  <i class="p-1 fa-brands fa-github"></i> 
+            </div>
+        </div>
+
+        <div class="flex flex-col">
+            <h1 class="font-bold text-2xl text-center">Subscribe</h1>
+            <div class="flex flex-row m-5">
+            <input type="text" id="name" placeholder="Enter your mail" class="border-2 h-14 w-3/4 p-1 m-2 rounded-lg" required>
+            <button class="bg-blue-600 text-white font font-bold rounded-md h-14 p-1 m-2 hover:bg-slate-400">Subscribe</button>   
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer id="footer" class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p class="mb-4">&copy; 2024 Landing Page. All Rights Reserved.Subhalakshmi</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script to toggle mobile menu -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+
+    <link href="./output.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/cddbdd44fc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="bg-blue-400 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="h-14 w-14">
+                <a href="#"><img class="rounded-full" src="C:\Users\SUBASH\OneDrive\Desktop\Java script\Landing page project\images\Logo.avif"></a>
+            </div>
+                
+            <div class="hidden md:flex space-x-4">
+                <button class="bg-green-400 px-6 py-2 rounded-full text-white hover:bg-green-800 border-2 border-green-950 font-medium m-3">Signup</button>
+                <a href="#" class="text-black-300 hover:text-white text-xl font-bold pt-4">Home</a>
+                <a href="#" class="text-black-300 hover:text-white text-xl font-bold pt-4">About</a>
+                <a href="#" class="text-black-300 hover:text-white text-xl font-bold pt-4">Services</a>
+                <a href="#" class="text-black-300 hover:text-white text-xl font-bold pt-4">Contact</a>
+            </div>          
+                
+            <div class="md:hidden flex items-center">
+                <button class="bg-green-400 px-6 py-2 rounded-full text-white hover:bg-green-800 border-2 border-green-950 font-medium m-3">Signup</button>
+                <button class="text-gray-300 focus:outline-none" onclick="toggleMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                    
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden">
+            <a href="#" class="block text-black-300 hover:text-white font-bold px-4 py-2">Home</a>
+            <a href="#" class="block text-black-300 hover:text-white font-bold  px-4 py-2">About</a>
+            <a href="#" class="block text-black-300 hover:text-white font-bold px-4 py-2">Services</a>
+            <a href="#" class="block text-black-300 hover:text-white font-bold  px-4 py-2">Contact</a>
+        </div>
+    </nav>
+    
+    <div class="bg-hero-pattern bg-cover h-screen opacity-85 flex flex-col items-center justify-center">
+        <h1 class="font-bold text-5xl text-white sm:text-4xl">We invest in the world's potential</h1>
+        <p class="font-medium text-5xl text-white">Unleashing the power of intelligent automation and insights</p>   
+        <div>
+        <button class="bg-blue-600 text-white font font-bold rounded-md p-3 m-5 hover:bg-slate-400">Get Started</button>   
+        <button class="bg-transparent text-white font font-bold border-2 rounded-md  hover:bg-slate-400 p-3 m-5 ">Learn more</button>    
+        </div>
+    </div>
+
+    <div class="container mx-auto mt-12 flex">
+        <div class="w-full ">
+            <img class="mx-auto md:w-1/2" src="C:\Users\SUBASH\OneDrive\Desktop\Java script\Landing page project\images\undraw_favorite_pqkj.png"> 
+        </div>
+
+        <div class="w-full md:w-1/2 text-center leading-[2rem]">
+            <p class="mt-6">Lorem ipsum it fugiat a doloribvoluptates dolores fugit magni deserunt tempore error sit nostrum, deleniti labore eaque velit vero in soluta. Ipsum similique ducimus temporibus doloremque blanditiis!
+            </p>
+            <button class="bg-blue-700 text-white px-6 py-2 rounded-full mt-6 font-medium">Get started</button>
+        </div>       
+    </div>
+
+    <div class="container m-5 justify-between">
+        <div class="text-center">
+         <h1 class="font-bold text-2xl">Our Team</h1>
+         <p class="text-xl text-gray-500 mb-5">Explore the whole collection of open-source web components and elements built wirth the utility classes from Tailwind</p> 
+        </div>
+        
+        <div class="container flex items-center">
+            <div class="container m-3 h-1/2 w-1/2">         
+             <img class="h-40 w-40" src="C:\Users\SUBASH\OneDrive\Desktop\Java script\Landing page project\images\portrait-smiling.avif">
+             <h1 class="font-bold">Lisa David</h1>
+             <p class="text-gray-600 font-semibold">CEO & Web Developer</p>
+             <p class="text-gray-500 text-base">Lisa drives the technical statergy of the fowbite platform and brand.</p>
+             <i class="p-1 fa-brands fa-facebook"></i>  <i class="p-1 fa-brands fa-square-instagram"></i>  <i class="p-1 fa-brands fa-linkedin"></i>  <i class="p-1 fa-brands fa-github"></i> 
+            </div>   
+
+            <div class="container m-3 h-1/2 w-1/2 ">
+                <img class="h-40 w-40" src="C:\Users\SUBASH\OneDrive\Desktop\Java script\Landing page project\images\smiling-young-bru.avif">
+                <h1 class="font-bold">Jese Leos</h1>
+                <p class="text-gray-600 font-semibold">CTO</p>
+                <p class="text-gray-500 text-base">Jese drives the technology or engineering department to enhance products and services.</p>
+                <i class="p-1 fa-brands fa-facebook"></i>  <i class="p-1 fa-brands fa-square-instagram"></i>  <i class="p-1 fa-brands fa-linkedin"></i>  <i class="p-1 fa-brands fa-github"></i>
+            </div>
+
+            <div class="container m-3 h-1/2 w-1/2 ">
+                <img class="h-40 w-40" src="C:\Users\SUBASH\OneDrive\Desktop\Java script\Landing page project\images\close-up-kid.avif">
+                <h1 class="font-bold">Lana Byrd</h1>
+                <p class="text-gray-600 font-semibold">Marketing & Sale</p>
+                <p class="text-gray-500 text-base">Lana drives the Marketing statergy of the fowbite platform and brand.</p>
+                <i class="p-1 fa-brands fa-facebook"></i>  <i class="p-1 fa-brands fa-square-instagram"></i>  <i class="p-1 fa-brands fa-linkedin"></i>  <i class="p-1 fa-brands fa-github"></i>
+            </div>
+
+            <div class="container m-3 h-1/2 w-1/2 ">
+                <img class="h-40 w-40" src="C:\Users\SUBASH\OneDrive\Desktop\Java script\Landing page project\images\positive-male-.avif">
+                <h1 class="font-bold">Bonnie Green</h1>
+                <p class="text-gray-600 font-semibold">Senior Front-end Developer</p>
+                <p class="text-gray-500 text-base">Bonnie drives the website by focusing on web applications user interface.</p>
+                <i class="p-1 fa-brands fa-facebook"></i>  <i class="p-1 fa-brands fa-square-instagram"></i>  <i class="p-1 fa-brands fa-linkedin"></i>  <i class="p-1 fa-brands fa-github"></i>
+            </div>
+        </div>    
+    </div>
+
+    <div class="container m-5 mx-auto mt-20 mb-20">
+        <div class="text-center">
+         <h1 class="font-bold text-2xl">Designed for business teams like yours</h1>
+         <p class="text-xl text-gray-500 mt-3 mb-3">Here at codemarch we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p> 
+        </div>
+        
+        <div class="grid grid-cols-3 gap-2">
+            <div class="relative container m-3 w-96 border-2 border-blue-600 rounded-2xl shadow-lg shadow-indigo-500/40 hover:bg-blue-300">   
+             <div class="text-center">         
+             <h1 class="font-bold text-3xl pt-3">Starter</h1>
+             <p class="text-gray-600 font-semibold">Best option for personal use & for your next project.</p>
+             <p class="text-black-500 text-2xl font-bold">$29<sub>/month</sub></p>
+             </div>
+             <ul class="p-5">
+                <li><i class="fa-solid fa-check text-green-600"></i> Individual configuration</li>
+                <li><i class="fa-solid fa-check text-green-600"></i> No setup, or hidden fees</li>
+                <li><i class="fa-solid fa-check text-green-600"></i> Team size: <span class="font-bold">1 developer</span></li>
+                <li><i class="fa-solid fa-check text-green-600"></i> Premium support:<span class="font-bold"> 6 months</span></li>
+                <li><i class="fa-solid fa-check text-green-600"></i> Free updates:<span class="font-bold"> 6 months</span></li>
+             </ul>
+             <button class="absolute bottom-0 transform translate-y-5 translate-x-60 px-2 py-2 bg-blue-700 hover:bg-blue-900 rounded-full text-white text-xl ">Get started</button>
+            </div>  
+            
+            <div class="relative container m-3 w-96 border-2 border-blue-600 rounded-2xl shadow-lg shadow-indigo-500/40 hover:bg-blue-300">   
+                <div class="text-center">         
+                <h1 class="font-bold text-3xl  pt-3">Company</h1>
+                <p class="text-gray-600 font-semibold">Relevent for multipe users,extended & premium suport.</p>
+                <p class="text-black-500 text-2xl font-bold">$99<sub>/month</sub></p>
+                </div>
+                <ul class="p-5">
+                   <li><i class="fa-solid fa-check text-green-600"></i> Individual configuration</li>
+                   <li><i class="fa-solid fa-check text-green-600"></i> No setup, or hidden fees</li>
+                   <li><i class="fa-solid fa-check text-green-600"></i> Team size: <span class="font-bold">10 developer</span></li>
+                   <li><i class="fa-solid fa-check text-green-600"></i> Premium support:<span class="font-bold"> 24 months</span></li>
+                   <li><i class="fa-solid fa-check text-green-600"></i> Free updates:<span class="font-bold"> 24 months</span></li>
+                </ul>
+                <button class="absolute bottom-0 transform translate-y-5 translate-x-60 px-2 py-2 bg-blue-700 hover:bg-blue-900 rounded-full text-white text-xl">Get started</button>
+               </div>  
+
+               <div class="relative container m-3 w-96 border-2 border-blue-600 rounded-2xl shadow-lg shadow-indigo-500/40 hover:bg-blue-300 ">  
+                <div class="text-center">         
+                <h1 class="font-bold text-3xl  pt-3">Enterprise</h1>
+                <p class="text-gray-600 font-semibold">Best for large scale uses and extended redistribution rights.</p>
+                <p class="text-black-500 text-2xl font-bold">$499<sub>/month</sub></p>
+                </div>
+                <ul class="p-5">
+                   <li><i class="fa-solid fa-check text-green-600"></i> Individual configuration</li>
+                   <li><i class="fa-solid fa-check text-green-600"></i> No setup, or hidden fees</li>
+                   <li><i class="fa-solid fa-check text-green-600"></i> Team size: <span class="font-bold">100+ developer</span></li>
+                   <li><i class="fa-solid fa-check text-green-600"></i> Premium support:<span class="font-bold"> 36 months</span></li>
+                   <li><i class="fa-solid fa-check text-green-600"></i> Free updates:<span class="font-bold"> 36 months</span></li>
+                </ul>
+                <button class="absolute bottom-0 transform translate-y-5 translate-x-60 px-2 py-2 bg-blue-700 hover:bg-blue-900 rounded-full text-white text-xl ">Get started</button>
+               </div>  
+        </div>     
+
+    </div>
+    
+    <div class="container bg-white p-8 rounded-lg shadow-md w-full max-w-lg ">
+        <div class="flex flex-col items-center mt-5">        
+            <h1 class="font-bold text-3xl mb-2 p-5">Contact Us</h1>
+            <p class="font-medium text-xl mb-1 text-center">Got a technical issue? Want to send feedback about a beta feature?</p>
+            <p class="font-medium text-xl mb-5 p-5 text-center">Need details about our Business plan? Let us know.</p>
+        </div>
+        <div class="flex flex-col items-center justify-center w-full">
+            <form class="flex flex-col w-full max-w-md">
+              <div class="flex flex-col mb-4 w-full">
+                <label for="name" class="font-bold text-lg mb-2">Your name</label>
+                <input type="text" id="name" placeholder="Enter your name" class="border-2 h-14 w-full p-2 rounded-lg" required>
+              </div>
+              <div class="flex flex-col mb-4 w-full">
+                <label for="email" class="font-bold text-lg mb-2">Your Email</label>
+                <input type="email" id="email" placeholder="Enter your email" class="border-2 h-14 w-full p-2 rounded-lg" required>
+              </div>
+              <div class="flex flex-col mb-4 w-full">
+                <label for="subject" class="font-bold text-lg mb-2">Subject</label>
+                <input type="text" id="subject" placeholder="Let us know how we can help" class="border-2 h-14 w-full p-2 rounded-lg">
+              </div>
+              <div class="flex flex-col mb-6 w-full">
+                <label for="message" class="font-bold text-lg mb-2">Your message</label>
+                <textarea id="message" placeholder="Leave a comment..." class="border-2 h-28 w-full p-2 rounded-lg"></textarea>
+              </div>
+              <button type="submit" class="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600">Send Message</button>
+            </form>
+        </div> 
+    </div>
+
+    <div class=" grid grid-cols-4 gap-5 mx-10 my-10">
+
+        <div class="flex flex-col w-40">
+            <h1 class="font-bold text-2xl text-center">About Us</h1>
+            <ul>
+                <a href="#"><li>About our company</li></a>
+                <a href="#"><li>Our Team</li></a>
+                <a href="#"><li>Mission and Values</li></a>
+                <a href="#"><li>Contact Us</li></a>
+            </ul>
+        </div>
+
+        <div class="flex flex-col w-40">
+            <h1 class="font-bold text-2xl text-center">Resourses</h1>
+            <ul>
+                <a href="#"><li>Blog</li></a>
+                <a href="#"><li>FAQs</li></a>
+                <a href="#"><li>Documentation</li></a>
+                <a href="#"><li>Case studies</li></a>
+            </ul>
+        </div>
+
+        <div class="flex flex-col">
+            <h1 class="font-bold text-2xl text-center">Connect with us</h1>
+            <div class="block mt-5 text-center text-3xl">
+             <i class="p-1 fa-brands fa-facebook"></i>  <i class="p-1 fa-brands fa-square-instagram"></i>  <i class="p-1 fa-brands fa-linkedin"></i>  <i class="p-1 fa-brands fa-github"></i> 
+            </div>
+        </div>
+
+        <div class="flex flex-col">
+            <h1 class="font-bold text-2xl text-center">Subscribe</h1>
+            <div class="flex flex-row m-5">
+            <input type="text" id="name" placeholder="Enter your mail" class="border-2 h-14 w-3/4 p-1 m-2 rounded-lg" required>
+            <button class="bg-blue-600 text-white font font-bold rounded-md h-14 p-1 m-2 hover:bg-slate-400">Subscribe</button>   
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+
+
+    
+    
+</body>
+</html> make it completely responsive-->
